@@ -2,26 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.borderBlack {
+  @apply border border-black/10;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.btnAnimation {
+  @apply focus:scale-110 hover:scale-110 active:scale-105 transition;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.btnLightStyle{
+  @apply bg-white text-gray-900 py-3 font-bold flex 
+  items-center gap-2 rounded-full outline-none;
 }
+
+.btnDarkStyle {
+  @apply bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none
+hover:bg-gray-950;
+}
+.tipStyle{
+  @apply fixed mt-2 bg-gray-700 text-white text-sm opacity-0 group-hover:opacity-100;
+}
+.inputStyle{
+  @apply h-12 rounded-lg p-2;
+}
+
+.inputStyleDark{
+  @apply dark:bg-white/10 dark:text-white dark:placeholder:text-white/80;
+}
+
+
