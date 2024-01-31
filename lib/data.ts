@@ -3,6 +3,7 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import PASSWORD from '@/public/PASSWORD.png'
+import NEWS from '@/public/NEWS.png'
 
 export const links = [
   {
@@ -42,7 +43,7 @@ export const projectsData = [
     description:
       "Progetto per apprendere il processo di convalida e styling dei moduli con Tailwind",
     tags: ["React", "TypeScript", "Tailwind"],
-    imageUrl: PASSWORD,
+    imageUrl: NEWS,
     repository: 'https://github.com/carolineconte/newsletter-form',
     demo: 'https://newsletter-form-phi.vercel.app/',
 
