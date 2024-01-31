@@ -43,10 +43,10 @@ function Project({ title, description, tags, imageUrl, repository, demo }: Proje
           dark:text-white/80'>{description}</p>
 
           <div className='flex gap-2 mt-4'>
-            <a href={demo} className='projectLink'>
+            <a href={demo} className='projectLink' target='_blank'>
               <HiDesktopComputer /> Demo
             </a>
-            <a href={repository} className='projectLink'>
+            <a href={repository} className='projectLink' target='_blank'>
               <FaGithubSquare /> Repository
             </a>
           </div>
