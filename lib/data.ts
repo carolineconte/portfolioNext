@@ -29,18 +29,23 @@ export const links = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Password generator",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+      "Progetto realizzato solo con Javascript Vanilla per migliorare e allenare la mia logica.",
+    tags: ["HTML", "CSS", "Javascript"],
     imageUrl:PASSWORD,
+    repository: 'https://github.com/carolineconte/passwordGenerator',
+    demo: 'https://password-generator-nine-inky.vercel.app/',
   },
   {
-    title: "rmtDev",
+    title: "Modulo newsletter",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+      "Progetto per apprendere il processo di convalida e styling dei moduli con Tailwind",
+    tags: ["React", "TypeScript", "Tailwind"],
     imageUrl: PASSWORD,
+    repository: 'https://github.com/carolineconte/newsletter-form',
+    demo: 'https://newsletter-form-phi.vercel.app/',
+
   },
   {
     title: "Word Analytics",
@@ -48,6 +53,9 @@ export const projectsData = [
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
     imageUrl: PASSWORD,
+    repository: 'https://github.com/carolineconte/passwordGenerator',
+    demo: 'https://password-generator-nine-inky.vercel.app/',
+
   },
 ] as const;
 

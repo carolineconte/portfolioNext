@@ -5,10 +5,14 @@ import { useScroll } from 'framer-motion';
 import Image from 'next/image';
 //Data
 import { projectsData } from '@/lib/data';
+import { HiDesktopComputer } from "react-icons/hi";
+import { FaGithubSquare } from "react-icons/fa";
+
+
 
 type ProjectsProps = typeof projectsData[number];
 
-function Project({ title, description, tags, imageUrl }: ProjectsProps) {
+function Project({ title, description, tags, imageUrl, repository, demo }: ProjectsProps) {
 
   const ref = useRef<HTMLDivElement>(null)
 
@@ -37,6 +41,15 @@ function Project({ title, description, tags, imageUrl }: ProjectsProps) {
           <h3 className='text-2xl font-semibold dark:text-white'>{title}</h3>
           <p className='mt-2 leading-relaxed text-gray-700 
           dark:text-white/80'>{description}</p>
+
+          <div className='flex gap-2 mt-4'>
+            <a href={demo} className='projectLink'>
+              <HiDesktopComputer /> Demo
+            </a>
+            <a href={repository} className='projectLink'>
+              <FaGithubSquare /> Repository
+            </a>
+          </div>
           <ul className='flex flex-wrap mt-4 gap-2 sm:mt-auto'>
             {
               tags.map((tag, i) => (
