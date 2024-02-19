@@ -24,11 +24,11 @@ export default function ProjectsSection() {
 
   return (
 
-    <section id='projects' ref={ref} className='scroll-mt-28 mb-28'>
+    <section id='projects' ref={ref} className='scroll-mt-28 mb-28 mx-auto'>
       <SectionTitle>Progetti</SectionTitle>
-      <div className='flex flex-wrap gap-4 justify-center'>
+      <div className='justify-center'>
       {
-        projectsData.map((project, i) => (
+       [...projectsData].reverse().map((project, i) => (
           <Project key={i} {...project} />
         ))
       }

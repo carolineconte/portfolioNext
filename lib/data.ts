@@ -4,6 +4,7 @@ import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import PASSWORD from '@/public/PASSWORD.png'
 import NEWS from '@/public/NEWS.png'
+import FOODORDERING from '@/public/food-ordering.png'
 
 export const links = [
   {
@@ -34,7 +35,7 @@ export const projectsData = [
     description:
       "Progetto realizzato solo con Javascript Vanilla per migliorare e allenare la mia logica.",
     tags: ["HTML", "CSS", "Javascript"],
-    imageUrl:PASSWORD,
+    imageUrl: PASSWORD,
     repository: 'https://github.com/carolineconte/passwordGenerator',
     demo: 'https://password-generator-nine-inky.vercel.app/',
   },
@@ -49,13 +50,13 @@ export const projectsData = [
 
   },
   {
-    title: "Word Analytics",
+    title: "​Sito per una pizzeria",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: PASSWORD,
-    repository: 'https://github.com/carolineconte/passwordGenerator',
-    demo: 'https://password-generator-nine-inky.vercel.app/',
+      "un sito per ordini online, con la possibilità di accedere tramite autenticazione con Google OAuth, è stato integrato il servizio di pagamento Stripe. Include anche un'area amministrativa, dove gestire ordini, menù e altre",
+    tags: ["React", "Next.js", "Tailwind", "MongoDB", "Node", "Mongoose"],
+    imageUrl: FOODORDERING,
+    repository: 'https://github.com/carolineconte/food-ordering',
+    demo: 'https://carolinecontedev-foodordering.vercel.app/',
 
   },
 ] as const;
