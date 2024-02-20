@@ -24,7 +24,7 @@ export const ContactSection = () => {
 
   useEffect(() => {
     if (inView) {
-      setActiveSection('Contact')
+      setActiveSection('Contattami')
     }
   }, [inView, setActiveSection])
 

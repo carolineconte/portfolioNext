@@ -14,7 +14,7 @@ export default function About() {
 
   useEffect(() => {
     if (inView) {
-      setActiveSection('About')
+      setActiveSection('Profilo')
     }
   }, [inView, setActiveSection])
 

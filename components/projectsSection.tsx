@@ -17,7 +17,7 @@ export default function ProjectsSection() {
  
   useEffect(() => {
     if (inView) {
-      setActiveSection('Projects')
+      setActiveSection('Progetti')
     }
   }, [inView, setActiveSection])
 
