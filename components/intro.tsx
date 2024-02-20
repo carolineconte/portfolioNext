@@ -67,7 +67,7 @@ export const Intro = () => {
       </h1>
 
       <div className='flex mb-28 gap-3 flex-col sm:flex-row justify-center items-center px-4 text-lg font-medium'>
-        <Link href='#contact' onClick={() => setActiveSection('Contact')}
+        <Link href='#contact' onClick={() => setActiveSection('Contattami')}
           className='group btnDarkStyle borderBlack btnAnimation '>
           Contattami qui <IoIosArrowDroprightCircle className='group-hover:translate-x-4 transition' />
         </Link>
