@@ -5,6 +5,8 @@ import { LuGraduationCap } from "react-icons/lu";
 import PASSWORD from '@/public/PASSWORD.png'
 import NEWS from '@/public/NEWS.png'
 import FOODORDERING from '@/public/food-ordering.png'
+import DRAGANDDROP from '@/public/DRAGANDDROP.png'
+import jquery from '@/public/jquery.png'
 
 export const links = [
   {
@@ -30,15 +32,7 @@ export const links = [
 ] as const;
 
 export const projectsData = [
-  {
-    title: "Password generator",
-    description:
-      "Progetto realizzato solo con Javascript Vanilla per migliorare e allenare la mia logica.",
-    tags: ["HTML", "CSS", "Javascript"],
-    imageUrl: PASSWORD,
-    repository: 'https://github.com/carolineconte/passwordGenerator',
-    demo: 'https://password-generator-nine-inky.vercel.app/',
-  },
+
   {
     title: "Modulo newsletter",
     description:
@@ -50,9 +44,37 @@ export const projectsData = [
 
   },
   {
+    title: "Password generator",
+    description:
+      "Progetto realizzato solo con Javascript Vanilla per migliorare e allenare la mia logica.",
+    tags: ["HTML", "CSS", "Javascript"],
+    imageUrl: PASSWORD,
+    repository: 'https://github.com/carolineconte/passwordGenerator',
+    demo: 'https://password-generator-nine-inky.vercel.app/',
+  },
+  {
+    title: "To Do list jQuery",
+    description:
+      "",
+    tags: ["HTML", "CSS", "Javascript",'jQuery'],
+    imageUrl: jquery,
+    repository: 'https://github.com/carolineconte/todo-jquery',
+    demo: 'https://carolineconte-todojquery-nu.vercel.app/',
+  },
+  {
+    title: "To Do List",
+    description:
+      "Progetto di una lista delle attività collegata a MongoDB, realizzata in Next.js con opzioni per modificare, riorganizzare e cancellare gli elementi della lista.",
+    tags: ["React", "TypeScript", "Tailwind","Mongoose", "MongoDB"],
+    imageUrl: DRAGANDDROP,
+    repository: 'https://github.com/carolineconte/toDo-DragandDrop',
+    demo: 'https://to-do-dragand-drop.vercel.app/',
+
+  },
+  {
     title: "​Sito per una pizzeria",
     description:
-      "un sito per ordini online, con la possibilità di accedere tramite autenticazione con Google OAuth, è stato integrato il servizio di pagamento Stripe. Include anche un'area amministrativa, dove gestire ordini, menù e altre",
+      "Possibilità di accedere tramite autenticazione con Google OAuth, è stato integrato il servizio di pagamento Stripe. Include anche un'area amministrativa, dove gestire ordini, menù e altre",
     tags: ["React", "Next.js", "Tailwind", "MongoDB", "Node", "Mongoose"],
     imageUrl: FOODORDERING,
     repository: 'https://github.com/carolineconte/food-ordering',
@@ -65,12 +87,16 @@ export const skillsData = [
   "HTML",
   "CSS",
   "JavaScript",
+  "jQuery",
   "TypeScript",
   "React",
   "Next.js",
   "Node.js",
-  "Git",
-  "Tailwind",
   "MongoDB",
   "Express",
+  "Tailwind",
+  "SASS",
+  "Git",
+  "GitHub",
+  "Figma",
 ] as const;

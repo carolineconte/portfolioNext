@@ -66,35 +66,37 @@ export const Intro = () => {
         Puoi dare un&apos;occhiata ai miei lavori qui sotto.
       </h1>
 
-      <div className='flex mb-28 gap-3 flex-col sm:flex-row justify-center items-center px-4 text-lg font-medium'>
+      <div className='flex  mb-28 gap-3 flex-col sm:flex-row justify-center items-center px-4 text-lg font-medium wrapper'>
+
         <Link href='#contact' onClick={() => setActiveSection('Contattami')}
           className='group btnDarkStyle borderBlack btnAnimation '>
           Contattami qui <IoIosArrowDroprightCircle className='group-hover:translate-x-4 transition' />
         </Link>
 
-        <a href='/CV.pdf' download
-          className=' group px-7 borderBlack btnAnimation btnLightStyle dark:text-white/90 dark:bg-white/10'>
-          Download CV <MdFileDownload className='group-hover:animate-bounce transition opacity-60' />
-        </a>
+        <Link href='/CV.pdf' download
+          className='group btnDarkStyle borderBlack btnAnimation '>
+          Download CV
+          <MdFileDownload className='group-hover:animate-bounce transition opacity-60' />
+        </Link>
 
-        <div className='group'>
+        <div className='group linkTip'>
+          <div className='tipStyle'>/carolineconte</div>
           <a href='https://github.com/carolineconte' target='_blank'
-            className='px-4 text-[1.35rem] btnLightStyle borderBlack btnAnimation 
-            dark:bg-white/10 dark:text-white/90'
-          >
+            className='iconContacts btnLightStyle borderBlack'>
             <FaGithub />
           </a>
-
-          <p className='tipStyle'>/carolineconte</p>
         </div>
 
-        <Link href='https://www.linkedin.com/in/caroline-contedasilva/' target='_blank'
-          className=' group px-4 text-[1.35rem] btnLightStyle borderBlack btnAnimation 
-          dark:bg-white/10 dark:text-white/90 '>
-          <TfiLinkedin />
-          <p className='tipStyle'>in/caroline-contedasilva/</p>
-        </Link>
+        <div className='group linkTip'>
+          <div className='tipStyle'>in/caroline-contedasilva/</div>
+          <a href='https://www.linkedin.com/in/caroline-contedasilva/' target='_blank'
+            className='iconContacts btnLightStyle borderBlack'>
+            <TfiLinkedin />
+          </a>
+        </div>
+
       </div>
+
     </motion.section>
   )
 }
