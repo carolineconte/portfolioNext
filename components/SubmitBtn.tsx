@@ -6,7 +6,7 @@ import { useFormStatus } from 'react-dom';
 
 
 
-export const SubmitBtn = ({ text }) => {
+export const SubmitBtn = ({ text } : any) => {
 
   const { pending } = useFormStatus()
 
