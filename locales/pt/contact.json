@@ -1,0 +1,10 @@
+{
+  "title": "Contato",
+  "text": "Você pode me contatar por esse endereço:",
+  "text2": " ou através desse formulário.",
+  "success": "E-mail enviado corretamente!",
+  "name": "Nome: ",
+  "email": "Email:",
+  "message": "Mensagem:",
+  "btn":"Enviar"
+}

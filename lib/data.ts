@@ -1,42 +1,15 @@
-import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
+
 import PASSWORD from '@/public/PASSWORD.png'
 import NEWS from '@/public/NEWS.png'
 import FOODORDERING from '@/public/food-ordering.png'
 import DRAGANDDROP from '@/public/DRAGANDDROP.png'
 import jquery from '@/public/jquery.png'
 
-export const links = [
-  {
-    name: "Home",
-    hash: "#home",
-  },
-  {
-    name: "Profilo",
-    hash: "#about",
-  },
-  {
-    name: "Progetti",
-    hash: "#projects",
-  },
-  {
-    name: "Skills",
-    hash: "#skills",
-  },
-  {
-    name: "Contattami",
-    hash: "#contact",
-  },
-] as const;
-
 export const projectsData = [
 
   {
-    title: "Modulo newsletter",
-    description:
-      "Progetto per apprendere il processo di convalida e styling dei moduli con Tailwind",
+    description: 0,
+    title: "Newsletter Module",
     tags: ["React", "TypeScript", "Tailwind"],
     imageUrl: NEWS,
     repository: 'https://github.com/carolineconte/newsletter-form',
@@ -44,27 +17,24 @@ export const projectsData = [
 
   },
   {
-    title: "Password generator",
-    description:
-      "Progetto realizzato solo con Javascript Vanilla per migliorare e allenare la mia logica.",
+    description: 1,
+    title: "Password Generator",
     tags: ["HTML", "CSS", "Javascript"],
     imageUrl: PASSWORD,
     repository: 'https://github.com/carolineconte/passwordGenerator',
     demo: 'https://password-generator-nine-inky.vercel.app/',
   },
   {
-    title: "To Do list jQuery",
-    description:
-      "",
+    description: 2,
+    title: "To Do jQuery",
     tags: ["HTML", "CSS", "Javascript",'jQuery'],
     imageUrl: jquery,
     repository: 'https://github.com/carolineconte/todo-jquery',
     demo: 'https://carolineconte-todojquery-nu.vercel.app/',
   },
   {
-    title: "To Do List",
-    description:
-      "Progetto di una lista delle attività collegata a MongoDB, realizzata in Next.js con opzioni per modificare, riorganizzare e cancellare gli elementi della lista.",
+    description: 3,
+    title: "To Do List with Drag and Drop",
     tags: ["React", "TypeScript", "Tailwind","Mongoose", "MongoDB"],
     imageUrl: DRAGANDDROP,
     repository: 'https://github.com/carolineconte/toDo-DragandDrop',
@@ -72,9 +42,8 @@ export const projectsData = [
 
   },
   {
-    title: "​Sito per una pizzeria",
-    description:
-      "Possibilità di accedere tramite autenticazione con Google OAuth, è stato integrato il servizio di pagamento Stripe. Include anche un'area amministrativa, dove gestire ordini, menù e altre",
+    description: 4,
+    title: "Ordering Platform for an Italian Pizzeria",
     tags: ["React", "Next.js", "Tailwind", "MongoDB", "Node", "Mongoose"],
     imageUrl: FOODORDERING,
     repository: 'https://github.com/carolineconte/food-ordering',

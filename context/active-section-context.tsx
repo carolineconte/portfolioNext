@@ -3,7 +3,7 @@
 import React, { createContext, useContext, useState } from 'react'
 import { links } from '@/lib/data'
 
-type SectionName = typeof links[number]['name'];
+type SectionName = string;
 type Props = { children: React.ReactNode };
 type ActiveSectionContextType = {
   activeSection: SectionName,
@@ -14,7 +14,7 @@ export const ActiveSectionContext = createContext<ActiveSectionContextType | nul
 
 export default function ActiveSectionContextProvider({ children }: Props) {
 
-  const [activeSection, setActiveSection] = useState<SectionName>('Home')
+  const [activeSection, setActiveSection] = useState<SectionName>('')
 
   return (
     <ActiveSectionContext.Provider value={{ activeSection, setActiveSection }}>

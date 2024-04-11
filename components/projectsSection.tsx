@@ -7,9 +7,10 @@ import Project from './ProjectCard';
 import SectionTitle from './section-title'
 //Data
 import { projectsData } from '@/lib/data'
+import { useTranslation } from 'react-i18next';
 
 export default function ProjectsSection() {
-
+  const { t } = useTranslation('projects');
   const { setActiveSection } = useActiveSectionContext();
   const { ref, inView } = useInView({
     threshold:0.5
@@ -17,7 +18,7 @@ export default function ProjectsSection() {
  
   useEffect(() => {
     if (inView) {
-      setActiveSection('Progetti')
+      setActiveSection('projects')
     }
   }, [inView, setActiveSection])
 
@@ -25,7 +26,7 @@ export default function ProjectsSection() {
   return (
 
     <section id='projects' ref={ref} className='scroll-mt-28 mb-28 mx-auto'>
-      <SectionTitle>Progetti</SectionTitle>
+     <SectionTitle>{t('projects:title')}</SectionTitle>
       <div className='justify-center'>
       {
        [...projectsData].reverse().map((project, i) => (

@@ -1,0 +1,7 @@
+{
+  "0": "Validation of module fields and styling with Tailwind",
+  "1": "Platform for password generation, with options for characters and history of generated passwords.",
+  "2": "Basic to-do list to practice jQuery",
+  "3": "Project of a list with drag and drop connected to the MongoDB database. With functionalities to rearrange the list, edit and delete tasks.",
+  "4": "Delivery site, with possibility of login and registration with google Oauth, payment management with Stripe. With administrative area, where to control users, orders and menu."
+}

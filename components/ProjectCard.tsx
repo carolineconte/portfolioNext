@@ -3,18 +3,27 @@ import React, { useRef } from 'react'
 import { motion, useTransform } from "framer-motion"
 import { useScroll } from 'framer-motion';
 import Image from 'next/image';
+import { StaticImageData } from 'next/image';
+
 //Data
-import { projectsData } from '@/lib/data';
 import { HiDesktopComputer } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
+//data
+import { useTranslation } from 'react-i18next';
 
+interface Project {
+  title: string;
+  description: number;
+  tags: readonly string[];
+  imageUrl: StaticImageData;
+  repository: string;
+  demo: string;
+}
 
-
-type ProjectsProps = typeof projectsData[number];
-
-function Project({ title, description, tags, imageUrl, repository, demo }: ProjectsProps) {
+function Project({ title, description, tags, imageUrl, repository, demo }: Project) {
 
   const ref = useRef<HTMLDivElement>(null)
+  const { t } = useTranslation('projects');
 
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -36,11 +45,10 @@ function Project({ title, description, tags, imageUrl, repository, demo }: Proje
                          dark:bg-white/10 dark:hover:bg-white/20 '>
 
         <div className='pt-2 pb-7 flex flex-col h-full sm:group-even:ml-[18rem]
-      sm:pl-10 sm:pr-2 sm:pt-8 sm:max-w-[53%]'
-        >
+      sm:pl-10 sm:pr-2 sm:pt-8 sm:max-w-[53%]'>
           <h3 className='text-xl font-semibold dark:text-white'>{title}</h3>
           <p className='mt-2 text-gray-700 
-          dark:text-white/80'>{description}</p>
+          dark:text-white/80'>{t(`projects:${description}`)}</p>
 
           <div className='flex gap-2 mt-4'>
             <a href={demo} className='projectLink' target='_blank'>

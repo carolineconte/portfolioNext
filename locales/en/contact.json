@@ -1,0 +1,10 @@
+{
+  "title": "Contact",
+  "text": "You can contact me directly at the address:",
+  "text2": " or through this form.",
+  "success": "Email correctly sent!",
+  "name": "Name: ",
+  "email": "Email:",
+  "message": "Message:",
+  "btn":"Send email"
+}

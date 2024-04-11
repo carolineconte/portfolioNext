@@ -13,11 +13,11 @@ const fadeInAnimationVariants = {
     opacity: 0,
     y: 100
   },
-  animate: (i : number) => ({
+  animate: (i: number) => ({
     opacity: 1,
     y: 0,
-    transition:{
-      delay:0.05 * i
+    transition: {
+      delay: 0.05 * i
     }
   })
 }
@@ -36,7 +36,7 @@ export const Skills = () => {
   }, [inView, setActiveSection])
 
   return (
-    <section ref={ref} id='skills'
+    <section ref={ref} id='Skills'
       className='mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40'>
       <SectionTitle>Skills</SectionTitle>
       <ul className='flex flex-wrap justify-center gap-2 text-lg text-gray-800'>
