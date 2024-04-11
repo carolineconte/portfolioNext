@@ -1,7 +1,6 @@
 'use client'
 //Hooks
 import React, { createContext, useContext, useState } from 'react'
-import { links } from '@/lib/data'
 
 type SectionName = string;
 type Props = { children: React.ReactNode };
