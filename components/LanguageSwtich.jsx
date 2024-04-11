@@ -41,7 +41,7 @@ export default function LanguageChanger() {
 
   return (
     <div className="fixed flex-col gap-3 bottom-20 right-5 bg-white w-[3rem] py-3 bg-opacity-50 backdrop-blur-[0.5rem] border border-black border-opacity-20 shadow-xl rounded-full flex items-center justify-center 
-    dark:bg-gray-950 z-[999]">
+    dark:bg-gray-950 dark:border-blue-50  z-[999] ">
 
       <button onClick={() => setNewLocale('en')}
         className={`${newLocale == 'en' ? 'hidden' : ''} w-[2.5rem] h-[2.5rem] cursor-pointer z-50 active:scale-105 hover:scale-[1.15] transition-all`} >
