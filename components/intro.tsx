@@ -17,7 +17,7 @@ export const Intro = () => {
 
   const { t } = useTranslation('intro');
 
-  const { setActiveSection } = useActiveSectionContext();
+  const { setActiveSection,setMobileNavOpen } = useActiveSectionContext();
   const { ref, inView } = useInView({
     threshold: 0.5,
   });
@@ -29,7 +29,8 @@ export const Intro = () => {
   }, [inView, setActiveSection])
 
   return (
-    <section ref={ref} id='home' className='scroll-mt-[100rem] mb-28 max-w-[50rem] text-center sm:mb-0'>
+    <section ref={ref} id='home' onClick={() => setMobileNavOpen(false)}
+    className='scroll-mt-[100rem] mb-28 max-w-[50rem] text-center sm:mb-0'>
       <div className='flex items-center justify-center mb-8'>
         <Image src='/profile.png' alt='Profile image' width='192' height='192' quality='95' priority={true}
           className=' h-72 w-60 rounded-full object-cover border-[0.35rem] border-white dark:border-blue-50/80 shadow-xl'

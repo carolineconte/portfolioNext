@@ -24,7 +24,7 @@ const fadeInAnimationVariants = {
 
 export const Skills = () => {
 
-  const { setActiveSection } = useActiveSectionContext();
+  const { setActiveSection, setMobileNavOpen } = useActiveSectionContext();
   const { ref, inView } = useInView({
     threshold: 0.5
   });
@@ -36,7 +36,7 @@ export const Skills = () => {
   }, [inView, setActiveSection])
 
   return (
-    <section ref={ref} id='skills'
+    <section ref={ref} id='skills' onClick={() => setMobileNavOpen(false)}
       className='mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40'>
       <SectionTitle>Skills</SectionTitle>
       <ul className='flex flex-wrap justify-center gap-2 text-lg text-gray-800'>

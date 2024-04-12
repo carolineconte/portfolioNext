@@ -18,6 +18,8 @@ export function generateStaticParams() {
   return i18nConfig.locales.map(locale => ({ locale }));
 }
 
+
+
 export default function RootLayout({
   children,
   params: { locale }

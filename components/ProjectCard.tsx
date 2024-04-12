@@ -4,7 +4,6 @@ import { motion, useTransform } from "framer-motion"
 import { useScroll } from 'framer-motion';
 import Image from 'next/image';
 import { StaticImageData } from 'next/image';
-
 //Data
 import { HiDesktopComputer } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
@@ -38,6 +37,7 @@ function Project({ title, description, tags, imageUrl, repository, demo }: Proje
       opacity: opacityProgress
     }}
       className="mb-3 sm:mb-8 last:mb-0 group text-center sm:text-left flex items-center justify-center"
+    
     >
       <section className='relative px-1 rounded-lg bg-gray-100 w-[95%] border border-blue-5 overflow-hidden 
                            sm:pr-8 sm:h-[20rem]

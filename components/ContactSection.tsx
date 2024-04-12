@@ -17,7 +17,7 @@ import { useTranslation } from 'react-i18next';
 
 export const ContactSection = () => {
 
-  const { setActiveSection } = useActiveSectionContext();
+  const { setActiveSection,setMobileNavOpen } = useActiveSectionContext();
   const { t } = useTranslation('about');
 
   const { ref, inView } = useInView({
@@ -36,7 +36,7 @@ export const ContactSection = () => {
   };
 
   return (
-    <motion.section id='contact' ref={ref}
+    <motion.section id='contact' ref={ref} onClick={()=>setMobileNavOpen(false)}
       initial={{ opacity: 0, }}
       whileInView={{ opacity: 1, }}
       transition={{ duration: 1 }}

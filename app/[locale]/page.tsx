@@ -11,6 +11,7 @@ import SectionDivider from "@/components/section-divider";
 import LanguageChanger from "@/components/LanguageSwtich";
 import { Footer } from '@/components/Footer'
 
+
 const i18nNamespaces = ['header','intro','about','contact','projects'];
 
 export default async function Home({params: { locale }}: any) {

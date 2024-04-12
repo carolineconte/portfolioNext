@@ -4,9 +4,12 @@ import React, { createContext, useContext, useState } from 'react'
 
 type SectionName = string;
 type Props = { children: React.ReactNode };
+
 type ActiveSectionContextType = {
   activeSection: SectionName,
-  setActiveSection: React.Dispatch<React.SetStateAction<SectionName>>
+  setActiveSection: React.Dispatch<React.SetStateAction<SectionName>>,
+  mobileNavOpen:boolean,
+  setMobileNavOpen:React.Dispatch<React.SetStateAction<boolean>>
 }
 
 export const ActiveSectionContext = createContext<ActiveSectionContextType | null>(null)
@@ -14,9 +17,10 @@ export const ActiveSectionContext = createContext<ActiveSectionContextType | nul
 export default function ActiveSectionContextProvider({ children }: Props) {
 
   const [activeSection, setActiveSection] = useState<SectionName>('')
+  const [mobileNavOpen, setMobileNavOpen] = useState(false)
 
   return (
-    <ActiveSectionContext.Provider value={{ activeSection, setActiveSection }}>
+    <ActiveSectionContext.Provider value={{ activeSection, setActiveSection,mobileNavOpen, setMobileNavOpen }}>
       {children}
     </ActiveSectionContext.Provider>
   )

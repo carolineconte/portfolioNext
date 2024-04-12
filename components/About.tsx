@@ -10,7 +10,7 @@ import { useTranslation } from 'react-i18next';
 export default function About() {
 
   const { t } = useTranslation('about');
-  const { setActiveSection } = useActiveSectionContext();
+  const { setActiveSection,setMobileNavOpen } = useActiveSectionContext();
 
   const { ref, inView } = useInView({
     threshold: 0.75,
@@ -23,7 +23,7 @@ export default function About() {
   }, [inView, setActiveSection])
 
   return (
-    <section id='about' ref={ref}
+    <section id='about' ref={ref} onClick={()=>setMobileNavOpen(false)}
       className='scroll-mt-28 mb-28 max-w-[90%] text-center leading-8 text-slate-900 dark:text-white/80 text-[1.1rem] sm:mb-24'>
       <SectionTitle>{t('about:title')}</SectionTitle>
       <p className='font-bold  text-[1.3rem] text-fuchsia-900 dark:text-[#6e61ff]'>{t('about:paragraph1')}</p>
