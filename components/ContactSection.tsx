@@ -41,7 +41,7 @@ export const ContactSection = () => {
       whileInView={{ opacity: 1, }}
       transition={{ duration: 1 }}
       viewport={{ once: true }}
-      className='scroll-mt-28 mb-20 sm:mb-28 w-[min(100%,40rem)] text-center'>
+      className='scroll-mt-28 px-5 mb-20 sm:mb-28 w-[min(100%,40rem)] text-center'>
 
       <SectionTitle> {t('contact:title')}</SectionTitle>
 

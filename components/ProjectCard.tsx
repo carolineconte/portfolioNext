@@ -37,20 +37,20 @@ function Project({ title, description, tags, imageUrl, repository, demo }: Proje
       scale: scaleProgress,
       opacity: opacityProgress
     }}
-      className="mb-3 sm:mb-8 last:mb-0 group"
+      className="mb-3 sm:mb-8 last:mb-0 group text-center sm:text-left flex items-center justify-center"
     >
-      <section className='relative rounded-lg bg-gray-100 max-w-[57rem] border border-blue-5 overflow-hidden 
-                           sm:pr-8 sm:h-[20rem]  
+      <section className='relative px-1 rounded-lg bg-gray-100 w-[95%] border border-blue-5 overflow-hidden 
+                           sm:pr-8 sm:h-[20rem]
                          hover:bg-gray-200 transition sm:group-even:pl-32
                          dark:bg-white/10 dark:hover:bg-white/20 '>
 
-        <div className='pt-2 pb-7 flex flex-col h-full sm:group-even:ml-[18rem]
+        <div className='pt-2 pb-7 flex flex-col h-full sm:group-even:ml-[55%]
       sm:pl-10 sm:pr-2 sm:pt-8 sm:max-w-[53%]'>
-          <h3 className='text-xl font-semibold dark:text-white'>{title}</h3>
-          <p className='mt-2 text-gray-700 
+          <h3 className='text-xl font-semibold dark:text-white px-1 '>{title}</h3>
+          <p className='mt-2 text-gray-700
           dark:text-white/80'>{t(`projects:${description}`)}</p>
 
-          <div className='flex gap-2 mt-4'>
+          <div className='flex gap-2 mt-4 justify-center sm:justify-start'>
             <a href={demo} className='projectLink' target='_blank'>
               <HiDesktopComputer /> Demo
             </a>
@@ -58,7 +58,7 @@ function Project({ title, description, tags, imageUrl, repository, demo }: Proje
               <FaGithubSquare /> Repository
             </a>
           </div>
-          <ul className='flex flex-wrap mt-4 gap-1 sm:mt-auto'>
+          <ul className='flex justify-center flex-wrap mt-4 gap-1 sm:mt-auto sm:justify-start'>
             {
               tags.map((tag, i) => (
                 <li className='dark:text-white/70 bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full' key={i}>{tag}</li>

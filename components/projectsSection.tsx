@@ -25,7 +25,7 @@ export default function ProjectsSection() {
 
   return (
 
-    <section id='projects' ref={ref} className='scroll-mt-28 mb-28 mx-auto'>
+    <section id='projects' ref={ref} className='scroll-mt-28 mb-28'>
      <SectionTitle>{t('projects:title')}</SectionTitle>
       <div className='justify-center'>
       {
