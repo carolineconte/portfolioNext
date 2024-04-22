@@ -4,5 +4,6 @@
   "1": "Piattaforma per la generazione di password, con opzioni per caratteri e storico delle password generate.",
   "2": "Lista di base delle attività per praticare jQuery",
   "3": "Progetto di una lista con trascinamento e rilascio collegata al database MongoDB. Con funzionalità per riorganizzare la lista, modificare ed eliminare le attività.",
-  "4": "Sito di consegna, con possibilità di accesso e registrazione con Google OAuth, gestione dei pagamenti con Stripe. Con area amministrativa, dove controllare utenti, ordini e menu."
+  "4": "Sito di consegna, con possibilità di accesso e registrazione con Google OAuth, gestione dei pagamenti con Stripe. Con area amministrativa, dove controllare utenti, ordini e menu.",
+  "5":"Il progetto DevBooks nasce dall'ispirazione di un design che ho trovato straordinario su Figma. Con un backend semplice realizzato in Node.js ed Express, e un frontend che utilizza React, SASS, axios e Context API, abbiamo creato un e-commerce facile da utilizzare. È una piattaforma dove puoi acquistare e aggiungere i tuoi libri preferiti in modo estremamente intuitivo."
 }

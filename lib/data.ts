@@ -4,6 +4,7 @@ import NEWS from '@/public/NEWS.png'
 import FOODORDERING from '@/public/food-ordering.png'
 import DRAGANDDROP from '@/public/DRAGANDDROP.png'
 import jquery from '@/public/jquery.png'
+import devbooks from '@/public/devbooks.png'
 
 export const projectsData = [
 
@@ -48,6 +49,14 @@ export const projectsData = [
     imageUrl: FOODORDERING,
     repository: 'https://github.com/carolineconte/food-ordering',
     demo: 'https://carolinecontedev-foodordering.vercel.app/',
+
+  },  {
+    description: 5,
+    title: "DevBooks",
+    tags: ["React", "Next.js", "SASS", "AXIOS", "Node", "Express","Context"],
+    imageUrl: devbooks,
+    repository: 'https://github.com/carolineconte/devBooks',
+    demo: 'https://carolinecontedev-dev-books.vercel.app/',
 
   },
 ] as const;

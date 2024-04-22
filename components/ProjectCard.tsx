@@ -40,7 +40,7 @@ function Project({ title, description, tags, imageUrl, repository, demo }: Proje
     
     >
       <section className='relative px-1 rounded-lg bg-gray-100 w-[95%] border border-blue-5 overflow-hidden 
-                           sm:pr-8 sm:h-[20rem]
+                           sm:pr-8
                          hover:bg-gray-200 transition sm:group-even:pl-32
                          dark:bg-white/10 dark:hover:bg-white/20 '>
 
@@ -50,7 +50,7 @@ function Project({ title, description, tags, imageUrl, repository, demo }: Proje
           <p className='mt-2 text-gray-700
           dark:text-white/80'>{t(`projects:${description}`)}</p>
 
-          <div className='flex gap-2 mt-4 justify-center sm:justify-start'>
+          <div className='flex gap-2 my-4 justify-center sm:justify-start'>
             <a href={demo} className='projectLink' target='_blank'>
               <HiDesktopComputer /> Demo
             </a>
