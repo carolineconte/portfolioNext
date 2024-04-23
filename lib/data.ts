@@ -56,7 +56,7 @@ export const projectsData = [
     tags: ["React", "Next.js", "SASS", "AXIOS", "Node", "Express","Context"],
     imageUrl: devbooks,
     repository: 'https://github.com/carolineconte/devBooks',
-    demo: 'https://carolinecontedev-dev-books.vercel.app/',
+    demo: 'https://devbooks.onrender.com/',
 
   },
 ] as const;
