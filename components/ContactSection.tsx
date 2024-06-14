@@ -14,10 +14,11 @@ import { sendEmail } from '@/actions/sendEmail';
 import { SubmitBtn } from './SubmitBtn';
 //data
 import { useTranslation } from 'react-i18next';
+import MediaIcons from './MediaIcons';
 
 export const ContactSection = () => {
 
-  const { setActiveSection,setMobileNavOpen } = useActiveSectionContext();
+  const { setActiveSection, setMobileNavOpen } = useActiveSectionContext();
   const { t } = useTranslation('about');
 
   const { ref, inView } = useInView({
@@ -36,7 +37,7 @@ export const ContactSection = () => {
   };
 
   return (
-    <motion.section id='contact' ref={ref} onClick={()=>setMobileNavOpen(false)}
+    <motion.section id='contact' ref={ref} onClick={() => setMobileNavOpen(false)}
       initial={{ opacity: 0, }}
       whileInView={{ opacity: 1, }}
       transition={{ duration: 1 }}
@@ -45,7 +46,7 @@ export const ContactSection = () => {
 
       <SectionTitle> {t('contact:title')}</SectionTitle>
 
-      <p className='text-gray-700 -mt-6 dark:text-white/80 w-full '>
+      <p className='text-gray-700 mt-6 dark:text-white/80 w-full '>
         {t('contact:text')}
         <span className='underline w-fit hover:cursor-pointer p-2 hover:bg-white/10 rounded-xl'
           onClick={() => handleCopyClick('carolinecontee@gmail.com')}>
@@ -63,16 +64,27 @@ export const ContactSection = () => {
         }
 
         toast.success(t('contact:success'))
-
       }}>
-        <input className='inputStyle borderBlack inputStyleDark' type="text" placeholder={t('contact:name')} required
+        <input className='inputStyle borderBlack inputStyleDark'
+          type="text"
+          placeholder={t('contact:name')}
+          required
           name='senderName' />
-        <input className='inputStyle borderBlack inputStyleDark' type="email" placeholder={t('contact:email')} required
+        <input className='inputStyle borderBlack inputStyleDark'
+          type="email" placeholder={t('contact:email')}
+          required
           name='senderEmail' />
-        <textarea className='h-52 my-3 rounded-lg borderBlack p-4 inputStyleDark resize-none' placeholder={t('contact:message')} required
+        <textarea className='h-52 my-3 rounded borderBlack p-4 inputStyleDark resize-none'
+          placeholder={t('contact:message')} required
           name='message' />
-        <SubmitBtn text={t('contact:btn')} />
+        <div className='lg:flex justify-between items-center'>
+          <SubmitBtn text={t('contact:btn')} />
+          <div className='wrapper-contact'>
+          <MediaIcons />
+          </div>
+        </div>
       </form>
+
     </motion.section>
   )
 }

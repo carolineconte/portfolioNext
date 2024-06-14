@@ -2,6 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'saudagar';
+  src: url('/fonts/Saudagar.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@layer components {
+  .scroll-bg-image {
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: background-position 5s ease-in-out;
+  }
+
+  .scroll-bg-image:hover {
+    background-position: 100% 100%;
+  }
+}
+
+
+.heroTitle {
+  @apply uppercase font-extrabold text-light text-[5em] md:text-[7em] lg:text-[10.3em];
+}
+
+@layer base {
+  .heroTitle {
+    text-shadow:
+      8px 3px 0 #424953,
+      10px 5px 0 #E58361,
+      1px -1px 0 #424953,
+      -1px 1px 0 #424953,
+      1px 1px 0 #E58361;
+  }
+}
+
+.heroBtn {
+  @apply gap-[5px] p-[5px] border-2 lg:text-xl lg:p-[10px] uppercase font-bold items-center z-40 hover:bg-transparent;
+}
+
 .borderBlack {
   @apply border border-black/10;
 }
@@ -19,15 +58,16 @@
 }
 
 .iconContacts {
-  @apply px-4 text-[1.35rem] dark:bg-white/10 dark:text-white/90
+  @apply text-[1.5rem] lg:text-[2.5rem] text-light hover:text-light/70
 }
 
 .linkTip {
   @apply flex relative flex-col items-center justify-center;
 }
 
+/* 
 .tipStyle {
-  @apply ease-[cubic-bezier(0.68,-0.55,0.265,1.55)] group-hover:-top-[70px] absolute top-0 opacity-0 pointer-events-none group-hover:opacity-100 transition-all group-hover:pointer-events-auto bg-gray-700 text-white text-sm py-3 px-6 w-[220px] rounded-full;
+  @apply ease-[cubic-bezier(0.68, -0.55, 0.265, 1.55)] group-hover:-top-[70px] absolute top-0 opacity-0 pointer-events-none group-hover:opacity-100 transition-all group-hover:pointer-events-auto bg-gray-700 text-white text-sm py-3 px-6 w-[220px] rounded-full;
 }
 
 .tipStyle::before {
@@ -39,10 +79,10 @@
   bottom: -8px;
   transform: translateX(-50%) rotate(45deg);
   background-color: inherit;
-}
+} */
 
 .inputStyle {
-  @apply h-12 rounded-lg p-2;
+  @apply h-12 rounded p-2;
 }
 
 .inputStyleDark {
@@ -50,5 +90,56 @@
 }
 
 .projectLink {
-  @apply flex gap-2 p-3 items-center justify-center dark:text-white/70 bg-black/[0.7] text-[1rem] uppercase text-white rounded-lg hover:bg-gray-950 hover:scale-110;
+  @apply flex gap-1 py-2 px-5 items-center justify-center dark:text-white/70 bg-black/[0.7] text-[1rem] uppercase text-white rounded-lg hover:bg-gray-950 hover:scale-110;
+}
+
+.wrapper-contact .button-animate {
+  @apply h-[45px] w-[45px] float-left mx-[5px] overflow-hidden rounded-full cursor-pointer border-2 border-orange transition-all ease-out duration-500;
+  @apply hover:w-[150px] hover:flex hover:border-medium-blue
+}
+
+.wrapper-contact .button-animate .icon {
+  @apply rounded-full p-[10px] ml-0;
+}
+
+.wrapper-contact .button-animate .icon svg {
+  @apply text-[20px];
+}
+
+#home .wrapper-contact .button-animate .icon svg {
+  @apply fill-white;
+}
+
+.wrapper-contact .button-animate:hover svg {
+  @apply fill-white
+}
+
+#home .wrapper-contact .button-animate span {
+  @apply text-light;
+}
+
+.wrapper-contact .button-animate span {
+  @apply text-[15px] font-medium ml-[15px] leading-[40px]
+}
+
+.wrapper-contact .button-animate:nth-child(1):hover .icon {
+  background-color: #60A727;
+}
+
+.wrapper-contact .button-animate:nth-child(2):hover .icon {
+  background: #283048;
+  background: linear-gradient(to right,
+      #283048, #859398);
+}
+
+.wrapper-contact .button-animate:nth-child(3):hover .icon {
+  background: #833ab4;
+  background: linear-gradient(to right,
+      #833ab4, #fd1d1d, #fcb045);
+}
+
+.wrapper-contact .button-animate:nth-child(4):hover .icon {
+  background: #1488CC;
+  background: linear-gradient(to right,
+      #1488CC, #2B32B2);
 }

@@ -10,11 +10,12 @@ import ProjectsSection from "@/components/projectsSection";
 import SectionDivider from "@/components/section-divider";
 import LanguageChanger from "@/components/LanguageSwtich";
 import { Footer } from '@/components/Footer'
+import DesignSection from '@/components/IdentidadeVisualSection';
 
 
-const i18nNamespaces = ['header','intro','about','contact','projects'];
+const i18nNamespaces = ['header', 'intro', 'about', 'contact', 'projects'];
 
-export default async function Home({params: { locale }}: any) {
+export default async function Home({ params: { locale } }: any) {
 
   const { t, resources } = await initTranslations(locale, i18nNamespaces);
 
@@ -24,14 +25,12 @@ export default async function Home({params: { locale }}: any) {
       locale={locale}
       resources={resources}>
       <main className='flex flex-col items-center w-full'>
-      <Header />
         <LanguageChanger />
+        <Header />
         <Intro />
-        <SectionDivider />
         <About />
-        <SectionDivider />
         <ProjectsSection />
-        <SectionDivider />
+        <DesignSection />
         <Skills />
         <ContactSection />
         <Footer />

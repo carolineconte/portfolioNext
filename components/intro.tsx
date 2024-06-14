@@ -6,18 +6,24 @@ import Link from 'next/link';
 //Styles
 import { IoIosArrowDroprightCircle } from "react-icons/io";
 import { FaGithub } from "react-icons/fa";
-import { TfiLinkedin } from "react-icons/tfi";
-import { MdFileDownload } from "react-icons/md";
+import { FaLinkedin, FaBoxArchive } from "react-icons/fa6";
+import { GrInstagram } from "react-icons/gr";
+import { MdEmail } from "react-icons/md";
+import { TbBrandUpwork } from "react-icons/tb";
+
+
 //Context
 import { useActiveSectionContext } from '@/context/active-section-context';
 //Data
 import { useTranslation } from 'react-i18next';
+import Quotes from './svg/Quotes';
+import MediaIcons from './MediaIcons';
 
 export const Intro = () => {
 
   const { t } = useTranslation('intro');
 
-  const { setActiveSection,setMobileNavOpen } = useActiveSectionContext();
+  const { setActiveSection, setMobileNavOpen } = useActiveSectionContext();
   const { ref, inView } = useInView({
     threshold: 0.5,
   });
@@ -30,56 +36,84 @@ export const Intro = () => {
 
   return (
     <section ref={ref} id='home' onClick={() => setMobileNavOpen(false)}
-    className='scroll-mt-[100rem] mb-28 max-w-[50rem] text-center sm:mb-0'>
-      <div className='flex items-center justify-center mb-8'>
-        <Image src='/profile.png' alt='Profile image' width='192' height='192' quality='95' priority={true}
-          className=' h-72 w-60 rounded-full object-cover border-[0.35rem] border-white dark:border-blue-50/80 shadow-xl'
-        />
+      className='relative p-5 scroll-mt-[100rem] bg-dark-blue max-w-[1200px] overflow-hidden
+     sm:rounded-lg sm:mb-0 md:mx-5 md:mt-10'>
+
+      <div className='absolute inset-0 w-full h-full opacity-15 z-30'>
+        <img src="/Textures.png" alt="" className='w-full h-full object-cover' />
       </div>
 
-      <div className='relative'>
-        <h2 className='text-center mb-5 text-4xl mt-2 font-bold'>Hello World!</h2>
+      <div className='absolute top-2 left-1 sm:top-5 lg:left-24'>
+        <h2 className='heroTitle'>Port</h2>
       </div>
 
-      <h1 className='mb-10 mt-4 px-4 text-xl font-medium !leading-[1.5] text-slate-600 dark:text-white/80'>
-        {t('intro:line1')}
-        <br />
-        {t('intro:line2')}
-        <br /><br />
-        <span className='font-bold text-2xl text-fuchsia-900 dark:text-[#6e61ff]'>{t('intro:line3')}</span>
-      </h1>
+      <div className='max-md:hidden absolute z-20 sm:-bottom-5 sm:right-2'>
+        <h2 className='heroTitle'>Folio</h2>
+      </div>
 
-      <div className='flex  mb-28 gap-3 flex-col sm:flex-row justify-center items-center px-4 text-lg font-medium wrapper'>
+      <div className='absolute max-md:rotate-90 top-[50%] max-md:left-[45%] text-[.7em] w-full 
+      md:top-10 md:right-5 md:w-[300px] lg:top-18 lg:right-18 xl:top-24 xl:right-24'>
+        <Quotes />
+        <cite className='text-light-blue/80'>
+          A web não é apenas uma ferramenta de comunicação, é uma experiência.
+          <span className='text-light'> Tim Berners-Lee</span>
+        </cite>
+      </div>
 
-        <Link href='#contact' onClick={() => setActiveSection('Contattami')}
-          className='group btnDarkStyle borderBlack btnAnimation dark:border-blue-50/80 '>
-          {t('intro:contact')}<IoIosArrowDroprightCircle className='group-hover:translate-x-4 transition' />
-        </Link>
+      <div className='flex flex-col mt-[90px] sm:flex-row sm:mt-[150px]'>
 
-        <Link href={t('intro:file')} download target="_blank"
-          className='group btnDarkStyle borderBlack btnAnimation dark:border-blue-50/80'>
-          {t('intro:download')}
-          <MdFileDownload className='group-hover:animate-bounce transition opacity-60' />
-        </Link>
-
-        <div className='group linkTip'>
-          <div className='tipStyle'>/carolineconte</div>
-          <a href='https://github.com/carolineconte' target='_blank'
-            className='iconContacts btnLightStyle borderBlack dark:border-blue-50/80'>
-            <FaGithub />
-          </a>
+        <div className='wrapper-contact gap-1 flex z-30 items-end justify-end
+       sm:flex-col sm:pb-6 sm:justify-end xl:w-[180px]'>
+          <MediaIcons />
         </div>
 
-        <div className='group linkTip'>
-          <div className='tipStyle'>in/caroline-contedasilva/</div>
-          <a href='https://www.linkedin.com/in/caroline-contedasilva/' target='_blank'
-            className='iconContacts btnLightStyle borderBlack dark:border-blue-50/80'>
-            <TfiLinkedin />
-          </a>
+        <div className='max-md:relative grow flex z-10 -mt-10 md:-mt-20 lg:mt-0'>
+          <Image src='/fotoHero.png' alt='Profile image'
+            width='192' height='192' quality='95' priority={true}
+            className='object-cover px-5 md:h-[530px] lg:h-[597px] w-full sm:p-0 sm:object-contain' />
+          <div className='absolute right-2 -bottom-5 z-20 md:hidden'>
+            <h2 className='heroTitle'>Folio</h2>
+          </div>
         </div>
 
-      </div>
+        <div className='flex flex-col items-end text-light text-center lg:mt-14 md:pl-[1em] md:w-[55%] xl:pl-[4em] xl:w-[46%]'>
+          <h2 className='uppercase text-[1.5em] bg-light-blue w-full md:text-[2em] lg:text-[2.5em]'>
+            {t('intro:line1')}
+          </h2>
 
+          <h1 className='uppercase leading-5 mt-2 text-justify px-5 font-extralight sm:px-0 sm:text-lg sm:mt-5 sm:text-left'>
+            {t('intro:line2')}
+          </h1>
+
+          <Link href='#projects' className=' hidden items-center justify-center  w-[50%] lg:flex heroBtn group self-start mt-5 border-medium-blue bg-medium-blue hover:border-orange'>
+            <span className='text-orange group-hover:animate-wiggle text-xl lg:text-3xl'><FaBoxArchive /></span>
+            {t('intro:work')}
+          </Link>
+
+          <Link href='#contact'
+
+ className=' hidden lg:flex heroBtn w-[50%] group lg:mr-10 max-lg:mt-5 bg-orange border-orange hover:border-light-blue'>
+            <span className='text-light-blue group-hover:animate-wiggle text-xl lg:text-4xl'>
+              <MdEmail />
+            </span>
+            {t('intro:contact')}
+          </Link>
+
+          <div className='lg:hidden flex w-full mt-5 justify-center'>
+            <button className='heroBtn flex group border-medium-blue bg-medium-blue hover:border-orange'>
+              <span className='text-orange group-hover:animate-wiggle text-xl lg:text-3xl'><FaBoxArchive /></span>
+              {t('intro:work')}
+            </button>
+
+            <button className='heroBtn group flex bg-orange border-orange hover:border-light-blue'>
+              <span className='text-light-blue group-hover:animate-wiggle text-xl lg:text-4xl'>
+                <MdEmail />
+              </span>
+              {t('intro:contact')}
+            </button>
+          </div>
+        </div>
+      </div>
     </section>
   )
 }
