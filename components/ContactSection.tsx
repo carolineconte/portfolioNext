@@ -77,7 +77,7 @@ export const ContactSection = () => {
         <textarea className='h-52 my-3 rounded borderBlack p-4 inputStyleDark resize-none'
           placeholder={t('contact:message')} required
           name='message' />
-        <div className='lg:flex justify-between items-center'>
+        <div className='flex flex-wrap justify-between items-center w-full'>
           <SubmitBtn text={t('contact:btn')} />
           <div className='wrapper-contact'>
           <MediaIcons />
