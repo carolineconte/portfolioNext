@@ -33,12 +33,12 @@ function Project({ imageUrl }: Project) {
       }}
     >
       <section className='relative p-3 my-3 rounded-lg bg-dark-blue border border-blue-5 overflow-hidden transition dark:bg-white/10'>
-        <Link href=''>
+        <div>
           <div
-            className={`w-[90vw] h-[40vh] bg- md:w-[45vw] lg:w-[25vw] xl:w-[15vw] rounded shadow scroll-bg-image border-2 border-light cursor-pointer`}
+            className={`w-[90vw] h-[40vh] bg- md:w-[45vw] lg:w-[25vw] xl:w-[15vw] rounded shadow scroll-bg-image border-2 border-light`}
             style={{ backgroundImage: `url(${imageUrl})` }}
           />
-        </Link>
+        </div>
       </section>
     </motion.div>
   )
