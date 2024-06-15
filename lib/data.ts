@@ -1,26 +1,21 @@
 
 export const projectsData = [
   {
-    description: 0,
     title: "Raffinate Odontologia",
-    tags: ["Next.js", "TypeScript", "Tailwind"],
     imageUrl: '/projects/raffinate.png',
-    demo: 'raffinate.com.br',
-
+    page: '/raffinate',
   },
   {
     description: 1,
     title: "Mil Postos",
     tags: ["Next.js", "TypeScript", "Tailwind"],
     imageUrl: '/projects/milpostos.png',
-    demo: 'https://password-generator-nine-inky.vercel.app/',
   },
   {
     description: 2,
     title: "Studio Camila Conde",
     tags: ["Next.js", "TypeScript", "Tailwind"],
     imageUrl: '/projects/studioca.png',
-    demo: 'https://password-generator-nine-inky.vercel.app/',
   },
 ] as const;
 

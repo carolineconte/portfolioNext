@@ -1,0 +1,26 @@
+{
+  "Titulo": "Raffinate",
+  "description": "Come designer e sviluppatrice, sono stata responsabile della creazione di un sito web completo per una clinica odontoiatrica situata in Brasile. L'obiettivo principale di questo progetto era attirare più clienti attraverso strategie di marketing digitale efficaci, inclusa l'ottimizzazione per motori di ricerca come Google. Il mio lavoro ha coinvolto tutto, dal design da zero allo sviluppo, garantendo che il sito fosse informativo, attraente e facile da navigare per i visitatori.",
+  "subtitle1": "Strumenti",
+  "section": "Sezioni incluse",
+  "section1": "Specialità",
+  "section2": "Chi Siamo",
+  "section3": "Differenziali",
+  "section4": "Recensioni dei clienti",
+  "section5": "Posizione con foto del luogo",
+  "section6": "Contatto",
+  "sections": {
+    "section1": "In questa sezione presentiamo tutte le specialità offerte dalla clinica. È essenziale mostrare la gamma di servizi e attrarre pazienti in cerca di soluzioni specifiche per le loro esigenze.",
+    "section2": "La sezione 'Chi Siamo' è dedicata a raccontare la storia della clinica, i valori e la missione. Qui, i visitatori possono conoscere di più sul percorso e sul team di professionisti che compongono la clinica. È un modo per creare una connessione emotiva e di fiducia con i futuri clienti.",
+    "section3": "Questa sezione serve a mostrare ai visitatori perché scegliere questa clinica rispetto ad altre. I differenziali sono importanti per rafforzare la posizione sul mercato e fornire un motivo solido per la scelta.",
+    "section4": "La fiducia è fondamentale nella scelta di una clinica odontoiatrica, e niente è meglio dell'opinione di altri pazienti per trasmetterla. Le recensioni aiutano a costruire credibilità e mostrano la soddisfazione dei pazienti con i servizi.",
+    "section5": "La posizione dettagliata facilita l'accesso e dimostra attenzione alla comodità dei pazienti. Le immagini dell'ambiente accogliente e moderno contribuiscono a una prima impressione positiva.",
+    "section6": "La sezione di contatto è cruciale per facilitare la comunicazione tra l'azienda e i clienti. Abbiamo incluso un modulo email, pulsanti WhatsApp, link alla posizione su Google Maps e l'indirizzo scritto. Vari pulsanti WhatsApp strategicamente posizionati nella pagina garantiscono che i visitatori possano contattarci facilmente in qualsiasi momento. Questo approccio multiplo assicura che i pazienti possano raggiungerci nel modo che preferiscono, rendendo il processo di prenotazione delle visite semplice ed efficiente."
+  },
+  "dashboard": "Questa dashboard è stata progettata per offrire un'interfaccia facile da usare, dove l'amministratore può gestire tutto in modo efficiente.",
+  "blog": "Aggiungere un blog è una strategia importante per migliorare la visibilità nelle ricerche su Google. Con contenuti nuovi e rilevanti pubblicati regolarmente, aumentiamo le possibilità di apparire nelle prime posizioni dei risultati di ricerca, attirando più visitatori e potenziali clienti sul sito.",
+  "blog2": "Sviluppato con un design pulito per offrire un'esperienza di lettura piacevole. Per rendere il caricamento più divertente, abbiamo incluso una schermata personalizzata con un disegno di un dente carino e la frase 'Spazzolando i dati... quasi pronti!'.",
+  "CTA": "Attualmente sto accettando nuovi clienti e mi piacerebbe sapere del tuo progetto. Si prega di includere quante più informazioni possibili sullo scopo del progetto, sui tempi e sul budget.",
+  "Contact": "Creiamo qualcosa insieme!",
+  "homepage":"Torna"
+}

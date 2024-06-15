@@ -143,3 +143,15 @@
   background: linear-gradient(to right,
       #1488CC, #2B32B2);
 }
+
+.subtitulo{
+  @apply tracking-widest font-["saudagar"] text-3xl my-5 md:text-5xl lg:text-4xl;
+}
+
+.subtituloSecao{
+  @apply tracking-widest font-["saudagar"] text-xl mt-5 border-2 border-orange py-2 px-4 w-fit rounded-full md:text-3xl lg:text-2xl lg:py-1 lg:px-2;
+}
+
+.projectPage p{
+@apply md:text-xl
+}

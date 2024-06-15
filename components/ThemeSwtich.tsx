@@ -36,7 +36,7 @@ export const ThemeSwtich = () => {
 
   return (
     <button
-      className="fixed bottom-5 right-5 bg-white w-[3rem] h-[3rem] bg-opacity-80 backdrop-blur-[0.5rem] shadow-xl rounded-full flex items-center justify-center hover:scale-[1.15] active:scale-105 transition-all
+      className="fixed bottom-5 right-5 bg-white  w-[2.5rem] md:w-[3rem]  h-[2.5rem] md:h-[3rem] bg-opacity-80 backdrop-blur-[0.5rem] shadow-xl rounded-full flex items-center justify-center hover:scale-[1.15] active:scale-105 transition-all
     border-black dark:bg-gray-950 dark:border-blue-50 border z-[999] border-opacity-20"
       onClick={toggleTheme}
     >

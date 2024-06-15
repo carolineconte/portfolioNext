@@ -46,7 +46,7 @@ export const ContactSection = () => {
 
       <SectionTitle> {t('contact:title')}</SectionTitle>
 
-      <p className='text-gray-700 mt-6 dark:text-white/80 w-full '>
+      <p className='mt-6 dark:text-white/80 w-full '>
         {t('contact:text')}
         <span className='underline w-fit hover:cursor-pointer p-2 hover:bg-white/10 rounded-xl'
           onClick={() => handleCopyClick('carolinecontee@gmail.com')}>
@@ -77,9 +77,9 @@ export const ContactSection = () => {
         <textarea className='h-52 my-3 rounded borderBlack p-4 inputStyleDark resize-none'
           placeholder={t('contact:message')} required
           name='message' />
-        <div className='flex flex-wrap justify-between items-center w-full'>
+        <div className='flex flex-wrap gap-3 justify-between items-center w-full'>
           <SubmitBtn text={t('contact:btn')} />
-          <div className='wrapper-contact'>
+          <div className='wrapper-contact '>
           <MediaIcons />
           </div>
         </div>

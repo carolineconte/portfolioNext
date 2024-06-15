@@ -10,9 +10,10 @@ import Link from 'next/link';
 interface Project {
   title: string;
   imageUrl: string;
+  page?: string;
 }
 
-function Project({ imageUrl }: Project) {
+function Project({ imageUrl, page }: Project) {
 
   const ref = useRef<HTMLDivElement>(null)
   const { t } = useTranslation('projects');
@@ -35,9 +36,16 @@ function Project({ imageUrl }: Project) {
       <section className='relative p-3 my-3 rounded-lg bg-dark-blue border border-blue-5 overflow-hidden transition dark:bg-white/10'>
         <div>
           <div
-            className={`w-[90vw] h-[40vh] bg- md:w-[45vw] lg:w-[25vw] xl:w-[15vw] rounded shadow scroll-bg-image border-2 border-light`}
+            className={`w-[90vw] h-[60vh] md:h-[40vh] md:w-[45vw] lg:w-[25vw] xl:w-[15vw] rounded shadow scroll-bg-image border-2 border-light`}
             style={{ backgroundImage: `url(${imageUrl})` }}
           />
+          {page && 
+          <Link 
+          className='w-full text-center pt-2 text-light mx-auto block cursor-pointer hover:scale-105'
+          href={page}
+          >
+          {t('projects:link')}
+          </Link>}
         </div>
       </section>
     </motion.div>

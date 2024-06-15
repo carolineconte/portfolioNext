@@ -1,0 +1,26 @@
+{
+  "Titulo": "Raffinate",
+  "description": "As a Designer and developer, I was responsible for creating a complete website for a dental clinic located in Brazil. The main objective of this project was to attract more clients through effective digital marketing strategies, including optimization for search engines like Google. My work involved everything from design from scratch to development, ensuring the site was informative, attractive, and easy to navigate for visitors.",
+  "subtitle1": "Tools",
+  "section": "Included Sections",
+  "section1": "Specialties",
+  "section2": "About Us",
+  "section3": "Differentials",
+  "section4": "Customer Reviews",
+  "section5": "Location with photos of the place",
+  "section6": "Contact",
+  "sections": {
+    "section1": "In this section, we present all the specialties offered by the clinic. It is essential to show the range of services and attract patients seeking specific solutions for their needs.",
+    "section2": "The 'About Us' section is dedicated to telling the clinic's story, values, and mission. Here, visitors can learn more about the journey and the team of professionals that make up the clinic. It is a way to create an emotional and trust connection with future clients.",
+    "section3": "This section serves to show visitors why they should choose this clinic over others. Differentials are important to strengthen market positioning and provide a solid reason for the choice.",
+    "section4": "Trust is fundamental in choosing a dental clinic, and nothing is better than the opinion of other patients to convey it. Reviews help build credibility and show patient satisfaction with the services.",
+    "section5": "Detailed location facilitates access and demonstrates concern for patient convenience. Images of the welcoming and modern environment contribute to a positive first impression.",
+    "section6": "The contact section is crucial to facilitate communication between the company and clients. We included an email form, WhatsApp buttons, links to location on Google Maps, and the written location. Several WhatsApp buttons strategically placed throughout the page ensure that visitors can easily get in touch at any time. This multiple approach ensures that patients can reach us in the way they prefer, making the appointment scheduling process simple and efficient."
+  },
+  "dashboard": "This dashboard was designed to offer an easy-to-use interface where the administrator can manage everything efficiently.",
+  "blog": "Adding a blog is an important strategy to improve visibility in Google searches. With new and relevant content published regularly, we increase the chances of appearing in the top search results, attracting more visitors and potential clients to the site.",
+  "blog2": "Developed with a clean design to provide a pleasant reading experience. To make loading more fun, we included a custom screen with a cute tooth drawing and the phrase 'Brushing the data... almost ready!'.",
+  "CTA": "I’m currently taking on new clients, and would love to hear about your project. Please include as much information as possible about the scope of your project, your timelines, and your budget.",
+  "Contact": "Let's create something together!",
+  "homepage":"Back"
+}

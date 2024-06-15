@@ -1,0 +1,27 @@
+{
+  "Titulo": "Raffinate",
+  "description": "Como Designer e desenvolvedora, fui responsável pela criação de um site completo para uma clínica odontológica situada no Brasil. O objetivo principal deste projeto foi atrair mais clientes através de estratégias eficazes de marketing digital, incluindo otimização para mecanismos de busca como o Google. Meu trabalho envolveu desde design do zero até desenvolvimento, garantindo que o site fosse informativo, atraente e fácil de navegar para os visitantes.",
+  "subtitle1": "Ferramentas",
+  "section": "Seções inclusas",
+  "section1": "Especialidades",
+  "section2": "Sobre Nós",
+  "section3": "Diferenciais",
+  "section4": "Avaliações dos clientes",
+  "section5": "Localização com fotos do local",
+  "section6": "Contato",
+  "sections": {
+    "section1": "Nesta seção, apresentamos todas as especialidades oferecidas pela clínica. É essencial para mostrar a abrangência dos serviços e atrair pacientes que buscam soluções específicas para suas necessidades.",
+    "section2": "A seção 'Sobre Nós' é dedicada a contar a história da clínica, valores e a missão. Aqui, os visitantes podem conhecer um pouco mais sobre a trajetória, a equipe de profissionais que compõe a clínica. É uma maneira de criar uma conexão emocional e de confiança com o futuro cliente.",
+    "section3": "Esta seção serve para mostrar aos visitantes por que escolher essa clínica em vez de outras. Os diferenciais são importantes para fortalecer a posição no mercado e proporcionar um motivo sólido para a escolha.",
+    "section4": "A confiança é fundamental na escolha de uma clínica odontológica, e nada melhor do que a opinião de outros pacientes para transmiti-la. As avaliações ajudam a construir credibilidade e mostram a satisfação dos pacientes com os serviços.",
+    "section5": "A localização detalhada facilita o acesso e demonstra preocupação com a conveniência dos pacientes. As imagens do ambiente acolhedor e moderno contribuem para uma primeira impressão positiva.",
+    "section6": "A seção de contato é crucial para facilitar a comunicação entre a empresa e os clientes. Incluímos um formulário de email, botões para WhatsApp, links para localização no Google Maps e a localização escrita. Os vários botões de WhatsApp estrategicamente espalhados pela página garantem que os visitantes possam entrar em contato facilmente a qualquer momento. Esta abordagem múltipla assegura que os pacientes possam nos alcançar da maneira que preferirem, tornando o processo de agendamento de consultas simples e eficiente."
+  },
+  "dashboard": "Esta dashboard foi projetada para oferecer uma interface fácil de usar, onde administrador pode gerenciar tudo de forma eficiente. ",
+  "blog": "Adicionar um blog é estratégia importante para melhorar a visibilidade nas buscas do Google. Com conteúdos novos e relevantes publicados regularmente, aumentamos as chances de aparecer nas primeiras posições dos resultados de busca, atraindo mais visitantes e potenciais clientes para o  site.",
+  "blog2": "desenvolvida com um design clean para proporcionar uma experiência de LEITURA agradável.Para tornar o carregamento mais divertido, incluímos uma tela personalizada com um desenho de um dente fofo e a frase 'Escovando os dados... quase prontos!'.",
+  "CTA": "Atualmente, estou aceitando novos clientes e adoraria saber mais sobre o seu projeto. Por favor, inclua o máximo de informações possíveis sobre o escopo do seu projeto, seus prazos e seu orçamento.",
+  "Contact": "Vamos criar algo juntos!",
+  "homepage":"Voltar"
+
+}

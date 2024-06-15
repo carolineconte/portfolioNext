@@ -40,21 +40,21 @@ export default function LanguageChanger() {
   },[newLocale])
 
   return (
-    <div className="fixed flex-col gap-3 bottom-20 right-5 bg-white w-[3rem] py-3 bg-opacity-50 backdrop-blur-[0.5rem] border border-black border-opacity-20 shadow-xl rounded-full flex items-center justify-center 
-    dark:bg-gray-950 dark:border-blue-50  z-[999] ">
+    <div className="fixed flex-col gap-3 bottom-16 md:bottom-20 right-5 bg-white w-[2.5rem] md:w-[3rem] py-2 md:py-3 bg-opacity-50 backdrop-blur-[0.5rem] border border-black border-opacity-20 shadow-xl rounded-full flex items-center justify-center 
+    dark:bg-gray-950 dark:border-blue-50 z-[999] ">
 
       <button onClick={() => setNewLocale('en')}
-        className={`${newLocale == 'en' ? 'hidden' : ''} w-[2.5rem] h-[2.5rem] cursor-pointer z-50 active:scale-105 hover:scale-[1.15] transition-all`} >
+        className={`${newLocale == 'en' ? 'hidden' : ''} w-[1.5rem] h-[1.5rem]  md:w-[2.5rem] md:h-[2.5rem] cursor-pointer z-50 active:scale-105 hover:scale-[1.15] transition-all`} >
        <English />
       </button>
 
       <button onClick={() => setNewLocale('pt')}
-        className={`${newLocale == 'pt' ? 'hidden' : ''} w-[2.5rem] h-[2.5rem] cursor-pointer z-50 active:scale-105 hover:scale-[1.15] transition-all`}>
+        className={`${newLocale == 'pt' ? 'hidden' : ''} w-[1.5rem] h-[1.5rem]  md:w-[2.5rem] md:h-[2.5rem] cursor-pointer z-50 active:scale-105 hover:scale-[1.15] transition-all`}>
         <Portuguese />
       </button>
 
       <button onClick={() => setNewLocale('it')}
-        className={`${newLocale == 'it' ? 'hidden' : ''} w-[2.5rem] h-[2.5rem] cursor-pointer z-50 active:scale-105 hover:scale-[1.15] transition-all`}>
+        className={`${newLocale == 'it' ? 'hidden' : ''} w-[1.5rem] h-[1.5rem]  md:w-[2.5rem] md:h-[2.5rem] cursor-pointer z-50 active:scale-105 hover:scale-[1.15] transition-all`}>
         <Italian />
       </button>
     </div>

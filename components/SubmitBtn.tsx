@@ -12,7 +12,7 @@ export const SubmitBtn = ({ text } : any) => {
 
   return (
     <button type='submit' className='btnDarkStyle group h-[3rem] w-fit btnAnimation
-    disabled:scale-100 disabled:bg-opacity-75 mb-4
+    disabled:scale-100 disabled:bg-opacity-75
     dark:bg-white/10 dark:hover:bg-white/50 dark:hover:text-gray-950'
       disabled={pending}
     >

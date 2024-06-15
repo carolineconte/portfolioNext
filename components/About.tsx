@@ -34,7 +34,7 @@ export default function About() {
 
   return (
     <section id='about' ref={ref} onClick={() => setMobileNavOpen(false)}
-      className='relative scroll-mt-28 max-w-[1200px] p-5 overflow-hidden leading-8 dark:text-white/80 
+      className='relative scroll-mt-28 max-w-[1200px] p-5 overflow-hidden pb-16 leading-8 dark:text-white/80 
       sm:mb-24 border-2 md:rounded-lg md:m-5 border-dark-blue lg:text-xl lg:mt-10 lg:font-light'>
 
       <div className='absolute top-0 md:right-0 md:top-[50%] lg:top-[40%] lg:right-5'>
