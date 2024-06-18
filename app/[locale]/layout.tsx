@@ -45,10 +45,8 @@ export default async function RootLayout({
           namespaces={i18nNamespaces}
           locale={locale}
           resources={resources}>
-
           <ActiveSectionContextProvider>
           <Header />
-
             {children}
           </ActiveSectionContextProvider>
           <Toaster position='top-right' />

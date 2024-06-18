@@ -15,11 +15,9 @@ export const Header = () => {
   const links = ['home', 'about', 'projects', 'skills', 'contact']
   const { activeSection, setActiveSection, setMobileNavOpen, mobileNavOpen } = useActiveSectionContext();
 
-  // const [mobileNavOpen, setMobileNavOpen] = useState(false)
-
   return (
     <>
-      <header className="md:hidden  w-full z-50">
+      <header className="md:hidden fixed  w-full z-50">
         <div className="w-full bg-white/50 fixed backdrop-blur-[0.2rem] text-right  pt-2 px-6 top-0 border-b border-slate-300 dark:bg-gray-950/90 dark:border-blue-900/80">
           <button onClick={() => setMobileNavOpen(!mobileNavOpen)}>
             <MenuIcon />
@@ -27,7 +25,7 @@ export const Header = () => {
         </div>
 
         <div onClick={() => setMobileNavOpen(!mobileNavOpen)}
-          className={mobileNavOpen ? 'z-50 fixed dark:bg-gray-950 bg-white bg-opacity-30  right-0 left-0 pb-4 ' : 'hidden'}>
+          className={mobileNavOpen ? 'z-[900] fixed dark:bg-gray-950 bg-white bg-opacity-30  right-0 left-0 pb-4 ' : 'hidden'}>
           <nav className='fixed w-full top-[2rem] left-1/2 -translate-x-1/2 flex-wrap py-2 sm:top-[1.7rem] sm:h-[initial] sm:py-0'>
 
             <ul className='sm:px-5 py-2 text-[.9rem] bg-dark-blue/60 font-medium backdrop-blur-[0.5rem] border border-black border-opacity-20
@@ -50,8 +48,8 @@ export const Header = () => {
       </header>
 
       {/* Menu large screen */}
-      <header className='z-50 hidden sm:block'>
-        <nav className='fixed  top-[1rem] left-1/2 -translate-x-1/2 flex-wrap py-2 sm:top-[1.7rem] sm:h-[initial] sm:py-0'>
+      <header className='z-50 hidden fixed  top-[1rem] left-1/2 -translate-x-1/2 sm:block'>
+        <nav className=' flex-wrap py-2 sm:top-[1.7rem] sm:h-[initial] sm:py-0'>
           <ul className='flex w-[90%] items-center justify-center sm:px-5 py-2 text-[.9rem] font-medium text-gray-900 
         bg-white/50  bg-opacity-30 backdrop-blur-[0.5rem] border border-black border-opacity-20 shadow-xl rounded-full
         sm:w-[initial] sm:flex-nowrap sm:gap-5 dark:bg-gray-950 dark:border-blue-50/80' >
