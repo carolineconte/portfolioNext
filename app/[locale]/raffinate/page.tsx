@@ -5,12 +5,8 @@ import { useTranslation } from 'react-i18next';
 //Context
 import { useActiveSectionContext } from '@/context/active-section-context';
 import MediaIcons from '@/components/MediaIcons';
-import { ContactSection } from '@/components/ContactSection';
 import Link from 'next/link';
 import { BsArrowBarLeft } from 'react-icons/bs';
-import { SubmitBtn } from '@/components/SubmitBtn';
-import toast from 'react-hot-toast';
-import { sendEmail } from '@/actions/sendEmail';
 
 type Props = {}
 
@@ -24,7 +20,7 @@ export default function RaffinatePage() {
     <div
       className='projectPage'
       onClick={() => setMobileNavOpen(false)}
-    >
+        >
 
       <Link href='/#projects'
         className='fixed flex items-center gap-1 bottom-5 left-2 bg-dark-blue px-3 border-2 border-light py-1 rounded-full text-light' >
@@ -45,8 +41,8 @@ export default function RaffinatePage() {
         />
       </div>
 
-      <div className='flex flex-col w-full max-w-[1440px] mx-auto items-end
-      lg:flex-row'>
+      {/*Skills Section */}
+      <div className='flex flex-col w-full max-w-[1440px] mx-auto items-end lg:flex-row'>
         <div className='pr-24 pl-3 -mt-16 md:-mt-32'>
           <Image src='/projects/raffinate/grupo.png'
             width={500} height={500} alt=''
@@ -64,8 +60,9 @@ export default function RaffinatePage() {
           </ul>
         </div>
       </div>
-
-      <div className='p-3 lg:flex gap-5 lg:mt-7 max-w-[1440px] mx-auto  border-4 rounded border-y-light-blue border-x-orange'>
+  {/*Skills Section */}
+  
+      <div className='projectSections border-y-light-blue border-x-orange'>
         <Image
           className='hidden lg:block lg:w-1/3 xl:w-1/5'
           src='/projects/raffinate.png'
@@ -100,10 +97,10 @@ export default function RaffinatePage() {
         </div>
       </div>
 
-      <div className='px-3 lg:mt-12 max-w-[1440px] mx-auto border-4 rounded border-y-light-blue border-x-lime-50'>
+      <div className='px-3 lg:mt-12 max-w-[1440px] mx-4 2xl:mx-auto border-4 rounded border-y-light-blue border-x-lime-50'>
         <h3 className='subtitulo'>Blog</h3>
         <p>{t('raffinate:blog')}</p>
-        <div className='flex flex-col gap-3 lg:flex-row items-center justify-center'>
+        <div className='flex flex-col gap-3 pt-6 lg:flex-row items-center justify-center'>
           <Image
             className='border xl:w-[50%]'
             src='/projects/raffinate/blog1.png'
@@ -123,7 +120,7 @@ export default function RaffinatePage() {
         />
       </div>
 
-      <div className='p-3 lg:mt-12 max-w-[1440px] mx-auto border-4 rounded border-y-orange border-x-dark-blue'>
+      <div className='p-3 lg:mt-12 max-w-[1440px] mx-4 2xl:mx-auto border-4 rounded border-y-orange border-x-dark-blue'>
         <h3 className='subtitulo'>Dashboard</h3>
         <p className='mb-5'>{t('raffinate:dashboard')}</p>
         <div className='flex flex-col gap-5 lg:flex-row items-center justify-center'>
