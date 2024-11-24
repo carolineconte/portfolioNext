@@ -1,6 +1,10 @@
 
 export const projectsData = [
   {
+    title: "Exodo",
+    imageUrl: '/projects/exodo.png',
+  },
+  {
     title: "Raffinate Odontologia",
     imageUrl: '/projects/raffinate.png',
     page: '/raffinate',
