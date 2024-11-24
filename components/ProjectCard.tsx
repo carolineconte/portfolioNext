@@ -39,13 +39,13 @@ function Project({ imageUrl, page }: Project) {
             className={`w-[90vw] h-[60vh] md:h-[40vh] md:w-[45vw] lg:w-[25vw] xl:w-[15vw] rounded shadow scroll-bg-image border-2 border-light`}
             style={{ backgroundImage: `url(${imageUrl})` }}
           />
-          {page && 
+          {/* {page && 
           <Link 
           className='w-full text-center pt-2 text-light mx-auto block cursor-pointer hover:scale-105'
           href={page}
           >
           {t('projects:link')}
-          </Link>}
+          </Link>} */}
         </div>
       </section>
     </motion.div>
